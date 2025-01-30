@@ -1,0 +1,10 @@
+
+oh-my-posh init pwsh --config 'C:\Users\siddh\AppData\Local\Programs\oh-my-posh\themes\atomic.omp.json' | Invoke-Expression
+echo "Welcome Back Siddhant"
+$my_codes="E:\lat-d\coding"
+Set-Alias -Name py -Value python3.12 
+Function lama {
+    param([string]$inputText)
+    ollama run llama3.2 $inputText
+}
+
